@@ -17,8 +17,8 @@ Let this assignment broaden your perspective on the world of streaming data! �
 ### 1. Creating Topics in Kafka:
 Create three topics in Kafka:
 
-[!TIP]
-Add your name or another identifier to topic names to ensure they are unique.
+>[!TIP]
+>Add your name or another identifier to topic names to ensure they are unique.
 
 - **building_sensors** — stores data from all sensors.
 - **temperature_alerts** — stores alerts for temperature exceeding permissible levels.
@@ -32,7 +32,7 @@ Add your name or another identifier to topic names to ensure they are unique.
    - Corresponding readings
 
 [!NOTE]
-Each script execution should simulate only one sensor. To simulate multiple sensors, the script must be run multiple times.
+> Each script execution should simulate only one sensor. To simulate multiple sensors, the script must be run multiple times.
 The sensor ID can be a random constant for a single script run and may change with each new execution.
 - 
 - Temperature values: random between 25 and 45°C.
