@@ -15,7 +15,7 @@ admin_client = KafkaAdminClient(
 )
 
 # Ім'я користувача для унікальних топіків
-my_name = "lesiaukr"
+my_name = "lesia999"
 
 # Визначення трьох топіків
 topics = [

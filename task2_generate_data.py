@@ -23,10 +23,11 @@ producer = Producer(
 
 # Функція для генерації та відправки даних від датчика
 def send_sensor_data():
-    sensor_id = str(uuid.uuid4())
-    print(f"{Fore.YELLOW}Starting data generation for sensor {Fore.CYAN}{sensor_id}{Style.RESET_ALL}")
+    print(f"{Fore.YELLOW}Starting data generation...")
 
     while True:
+        # Генерація унікального sensor_id для кожного повідомлення
+        sensor_id = str(uuid.uuid4())
         # Генерація даних
         temperature = random.uniform(25, 45)
         humidity = random.uniform(15, 85)
@@ -39,11 +40,13 @@ def send_sensor_data():
             "humidity": humidity,
         }
 
-        # Виведення з кольоровим форматуванням
-        print(f"{Fore.GREEN}Temperature: {temperature:.2f}°C, Humidity: {humidity:.2f}%{Style.RESET_ALL}")
+        # Виведення даних з кольоровим форматуванням
+        print(f"{Fore.BLUE}----------------------------------------{Style.RESET_ALL}")
+        print(f"{Fore.CYAN}Sensor ID: {sensor_id}{Style.RESET_ALL}")
+        print(f"{Fore.GREEN}Temperature: {temperature:.2f}°C{Style.RESET_ALL}")
+        print(f"{Fore.YELLOW}Humidity: {humidity:.2f}%{Style.RESET_ALL}")
         print(f"{Fore.MAGENTA}Timestamp: {timestamp}{Style.RESET_ALL}")
-
-        print(f"{Fore.GREEN}Generated data: {data}{Style.RESET_ALL}")
+        print(f"{Fore.BLUE}----------------------------------------{Style.RESET_ALL}")
 
         # Відправка даних до топіку
         topic_name = "building_sensors"
