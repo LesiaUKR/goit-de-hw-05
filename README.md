@@ -31,8 +31,8 @@ Create three topics in Kafka:
    - Timestamp of data collection
    - Corresponding readings
 
-[!NOTE]
-> Each script execution should simulate only one sensor. To simulate multiple sensors, the script must be run multiple times.
+>[!NOTE]
+>Each script execution should simulate only one sensor. To simulate multiple sensors, the script must be run multiple times.
 The sensor ID can be a random constant for a single script run and may change with each new execution.
 - 
 - Temperature values: random between 25 and 45°C.
